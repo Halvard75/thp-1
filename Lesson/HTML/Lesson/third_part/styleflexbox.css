@@ -1,0 +1,35 @@
+#conteneur
+{
+	display :flex;
+	justify-content: space-around;
+	border: 2px solid #444;
+	align-items: baseline;
+
+	height: 200px;
+	border: 2px solid #444
+}
+
+.element
+{
+	width: 150px;
+	height: 100px;
+}
+
+.element:nth-child(1)
+{
+	background-color: orange;
+	margin: auto;
+	flex: 1;
+}
+
+.element:nth-child(2)
+{
+	background-color: blue;
+	margin: auto;
+}
+
+.element:nth-child(3)
+{
+	background-color: green;
+	margin: auto;
+}

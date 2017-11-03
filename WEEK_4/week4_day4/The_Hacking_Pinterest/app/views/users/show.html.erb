@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+
+<h2>Pins</h2>
+<% @user.pins.each do |pin| %>
+
+<div class="field"><strong>Titre</strong>
+<%= pin.title %></div>
+<div class="field"><strong>URL</strong>  
+<%= pin.url %>
+<td><%= link_to 'Show', pin.url %></td>
+<% end %> </div>
+
+
+
+
+<div>-----</div>
+
+<%= render 'pin' %>

@@ -1,0 +1,14 @@
+<h1>Editer ton ragot</h1>
+
+<%= form_tag gossip_path(@gossip), method: :put do %>
+
+<%= render 'form' %>
+ 
+  <%= submit_tag "Modifier le gossip"%>
+<% end %>
+
+  <td><%= link_to 'Supprimer le gossip', gossip_path(gossip),
+              method: :delete,
+              data: { confirm: 'Etes vous certain?' } %></td>
+<%= link_to 'Retour à la liste des gossips', gossip_path %>
+

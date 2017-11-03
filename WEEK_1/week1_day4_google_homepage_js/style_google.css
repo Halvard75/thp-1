@@ -1,0 +1,147 @@
+/* ********************** */
+/* GOOGLE.HTML */
+/* ********************** */
+
+body {
+  font-family: arial, sans-serif;
+}
+
+
+/* HEADER */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: right;
+}
+
+li {
+    float: left;
+    font-size: 12px
+}
+
+li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+/* BOUTON : AFFICHAGE CONTENU*/
+
+#bouton_affichage {
+	text-align: center;
+	clear: both;
+	padding-top: 150px;
+	margin-bottom: 50px;
+	opacity: 0.9;
+	font-size: 25px;
+}
+
+/* BOUTON : GRILLE*/
+
+#bouton_grille {
+	text-align: center;
+	clear: both;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	opacity: 0.9;
+	font-size: 5px;
+}
+
+
+/* DOODLE */
+
+img {
+	width: 40%;
+	height: 40%;
+}
+
+.google #google_logo {
+	text-align: center;
+	display: block;
+	margin: auto;
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* FORM */
+
+label {
+    cursor: auto;
+}
+
+.form {
+	text-align: center;
+	margin: auto;
+	font-size : 15px;
+}
+
+.form #form_search { 
+	width: 40%;
+	line-height: 32px;
+	padding: 45px 100px;
+	padding: 0 8px;
+	color:grey;
+}
+
+form #form_search:hover
+{
+	box-shadow: 2px 2px 6px #777777;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	opacity: 0.5;
+	font-size: 15px;
+}
+
+
+
+/* FOOTER */
+
+footer  {
+	background: #f2f2f2;
+	border-top: solid 2px #e4e4e4;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+	width: 100%;
+}
+
+footer ul li {
+	display: inline;
+	color: black;
+	font-size:11px;
+	padding: 1px;
+	background-color: #f2f2f2;
+	opacity: 0.8;
+}
+
+footer ul {
+	float: left;
+	padding: 1px;
+}
+
+footer ul a:hover {
+	text-decoration: underline;
+}
+
+.footer-right {
+	float: right;
+}

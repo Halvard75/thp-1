@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', root_path %>
+
+<br>
+
+<p>La réponse </p>
+<%= link_to image_tag("http://image-image.linternaute.com/image/600/1330945896/63716386.jpg", alt: "Reponse") %>

@@ -1,0 +1,19 @@
+h1
+{
+	width: 600px  ;
+
+background-color: #CCC;
+	height: ;
+
+}
+
+p
+{
+	width : 50px;
+	height: 10PX;
+	border: 1px solid black;
+	text-align: justify;
+	padding: 12px;
+	overflow: auto;
+	
+}

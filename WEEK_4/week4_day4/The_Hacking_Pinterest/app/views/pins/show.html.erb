@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pin.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @pin.url %>
+</p>
+
+<%= link_to 'Edit', edit_user_pin_path(@pin) %> |
+<%= link_to 'Back', user_pins_path %>
+
+<h2>Commentaires</h2>
+<% @pin.comments.each do |comment| %>
+
+<div class="field"><strong>Titre</strong>
+<%= comment.title %></div>
+<div class="field"><strong>Contenu:</strong>  
+<%= comment.body %>
+<% end %> </div>
+
+
+<h2>Ajouter un commentaire</h2>
+<%= form_with(model: [ @pin, @pin.comments.build ]) do |form| %>
+<div class="field"><%= form.label :title %><br>
+<%= form.text_field :title,id: :comment_title %></div>
+<div class="field"><%= form.label :body %><br>
+<%= form.text_field :body,id: :comment_body %></div>
+
+
+<div class="actions"><%= form.submit %></div>
+<% end %>

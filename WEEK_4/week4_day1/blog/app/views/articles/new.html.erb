@@ -1,0 +1,15 @@
+<h1>Créer nouvel article</h1>
+
+<%= form_tag (articles_path) do %>
+<%= render 'form' %>
+ 
+  <%= submit_tag "Créer nouvel article"%>
+<% end %>
+
+
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+  ...
+<% end %>
+ 
+<%= link_to 'Retour à la liste', articles_path %>
+

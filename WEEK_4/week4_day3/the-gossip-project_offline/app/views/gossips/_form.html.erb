@@ -1,0 +1,29 @@
+<% if @gossip.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@gossip.errors.count, "error") %> prohibited
+        this gossip from being saved:
+      </h2>
+      <ul>
+        <% @gossip.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+    <%= label_tag 'anonymous_author', 'Pseudo pour faire la balance' %>
+    <%= text_field_tag 'anonymous_author'  %>
+ 
+
+ 
+    <%= label_tag 'content', 'Ton ragot' %>
+    <%= text_field_tag 'content'  %>
+
+
+
+
+
+
+
+

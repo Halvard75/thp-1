@@ -1,0 +1,9 @@
+<h2>Ajouter Pins</h2>
+<%= form_with(model: [ @user, @user.pins.build ]) do |form| %>
+<div class="field"><%= form.label :title %><br>
+<%= form.text_field :title,id: :pin_title %></div>
+<div class="field"><%= form.label :url %><br>
+<%= form.text_field :url,id: :pin_url%></div>
+
+<div class="actions"><%= form.submit %></div>
+<% end %>

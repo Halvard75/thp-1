@@ -1,0 +1,32 @@
+<%= form_with(model: moussaillon, local: true) do |form| %>
+  <% if moussaillon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(moussaillon.errors.count, "error") %> prohibited this moussaillon from being saved:</h2>
+
+      <ul>
+      <% moussaillon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username, id: :moussaillon_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :moussaillon_email %>
+  </div>
+
+    <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :bio, id: :moussaillon_bio %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

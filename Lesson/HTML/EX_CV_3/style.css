@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'bromo', 'sans-recif';
+    src: url('/bromo.otf') format('otf');
+}
+
+body
+{
+    background-image: url("./image/white.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: "bromo";
+}
+
+h2
+{
+	color: teal;
+   box-shadow: 2px 2px 0px teal;
+}
+
+.title
+{
+	text-align: center;
+  font-family: "bromo";
+}
+
+.subtitle
+{
+	text-align: center;
+	text-decoration: underline;
+  font-family: "bromo";
+  border: 1px blue dashed;
+}
+
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('image/lisere.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}

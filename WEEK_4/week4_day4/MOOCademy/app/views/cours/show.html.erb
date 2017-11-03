@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre:</strong>
+  <%= @cour.titre %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cour.description %>
+</p>
+
+<%= link_to 'Edit', edit_cour_path(@cour) %> |
+<%= link_to 'Back', cours_path %>
+
+
+<h2>Lessons</h2>
+<% @cour.lessons.each do |lesson| %>
+  <p>
+    <strong>Leçon:</strong>
+    <%= lesson.titre %>
+  </p>
+ 
+  <p>
+    <strong>Contenu:</strong>
+    <%= lesson.body %>
+  </p>
+<% end %>
+ 
+<h2>Add a lesson:</h2>
+<%= form_with(model: [ @cour, @cour.lessons.build ]) do |form| %>
+<div class="field">
+    <%= form.label :titre %><br>
+    <%= form.text_field :titre,id: :lesson_titre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %><br>
+    <%= form.text_area :body, id: :cour_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @event.place %>
+</p>
+
+<p>
+  <strong>Creator:</strong>
+  <%= @event.creator.name %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+</br> </br>
+
+<div>
+      <h1>
+        Attending users
+      </h1>
+<table class="table table-striped table-hover">
+    <tbody>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <% @event.user_attendees.each do |u|%>
+    <tr>
+        <td> <%= u.name %> </td>
+    </tr>
+    <% end %>
+    </tbody>
+</table>
+</div>
+<div class="center">
+          <% if @event.user_attendees.include?(current_user) %>
+            <h2 class="btn btn-info"> You are attending to this event </h2>
+        <% else %>  
+            <td> <%= button_to 'Attend', attend_event_path(), method: :post, confirm: 'really?',  class: "btn btn-lg btn-primary" %> </td>  
+        <% end %>
+
+</div>
+
+<%= link_to 'Back to event', events_path %>
+<%= link_to 'Back to user', '/users/' %>

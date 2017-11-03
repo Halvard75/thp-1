@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @dogsitter.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @dogsitter.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_dogsitter_path(@dogsitter) %> |
+<%= link_to 'Back', dogsitters_path %>

@@ -1,0 +1,15 @@
+<h2>Gossips ???</h2>
+<% @moussaillon.gossips.each do |gossip| %>
+
+
+<div class="field"><strong>Contenu:</strong>  
+<%= gossip.body %>
+<% end %> </div>
+
+
+<h2>Ajouter un gossip</h2>
+<%= form_with(model: [ @moussaillon, @moussaillon.gossips.build ]) do |form| %>
+<div class="field"><%= form.label :body %><br>
+<%= form.text_field :body,id: :gossip_body %></div>
+<div class="actions"><%= form.submit %></div>
+<% end %>

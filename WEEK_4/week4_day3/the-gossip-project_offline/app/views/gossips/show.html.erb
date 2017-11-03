@@ -1,0 +1,16 @@
+
+<p>
+  <strong>Balance</strong>
+  <%= @gossip.anonymous_author%>
+</p>
+ 
+<p>
+  <strong>gossip:</strong>
+  <%= @gossip.content %>
+</p>
+ 
+<%= link_to 'Editer le gossip', edit_gossip_path(@gossip) %> |
+<%= link_to 'Retour liste gossip', gossips_path %> |
+ <%= link_to 'Supprimer le gossip', @gossip,
+              method: :delete,
+              data: { confirm: 'Etes vous certain?' } %>

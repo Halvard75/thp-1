@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @moussaillon.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @moussaillon.email %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @moussaillon.bio %>
+</p>
+
+<%= render 'gossip' %>
+
+
+<%= link_to 'Edit', edit_moussaillon_path(@moussaillon) %> |
+<%= link_to 'Back', moussaillons_path %>
