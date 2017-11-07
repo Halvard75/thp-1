@@ -17,7 +17,7 @@ class GossipsController < ApplicationController
   end
 
 def new
-    @gossip=current_moussaillon.gossips.new
+    @gossip=current_user.gossips.new
   end
 
   # GET /gossips/1/edit
