@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  #je mets la fonction dont j'ai besoin dans mon controller 
   def index
     if params.key?(:tweeter)
       @msg = params_tweet
