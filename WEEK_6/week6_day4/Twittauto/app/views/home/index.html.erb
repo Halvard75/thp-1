@@ -1,0 +1,7 @@
+<h1>Tweet from Here !</h1>
+
+<%= form_tag("/tweet", method: "get") do %>
+  <%= label_tag(:tweeter, "Message à twitter") %>
+  <%= text_field_tag(:tweeter) %>
+  <%= submit_tag("Tweet") %>
+<% end %>
