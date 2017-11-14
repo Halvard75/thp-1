@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Intuit Accounts - Sign Up</title>
-    <link href="main.scss" rel="stylesheet" type="text/css">
+    <link href="main.scss" rel="stylesheet" type="text/scss">
   </head>
   <body>
     <div class="sign-in-bar">
       
         <button class="sign-in-button"> 
-          <span id="lock-image"><%= image_tag("lock.png", :alt => "lock logo") %></span><span class="button-text"><%= image_tag("lock.png", :alt => "lock logo") %><%= link_to "Sign In", new_session_path(resource_name) %></span></button>
+          <i class="material-icons md-18 md-light">lock</i><span class="button-text"><%= link_to "Sign In", new_session_path(resource_name), class: "sign-in-text" %></span ></button>
           <p class="existing-sign-in">Already have an Intuit account?<br><%= link_to "I forgot my User ID or Password", new_password_path(resource_name) %><br></p>
     </div>
     
     <div class="logo-holder-bar">
-      <a class="logo"><%= image_tag("intuit.png", :alt => "intuit logo") %></a>
-    </div>
+      <%= image_tag("intuit.png", :alt => "intuit logo", class: "centered_logo") %>
+    </div> </br> </br></br></br>
+
 
 
     <form action="#" method="post" class="sign-up-form">
       <div class="mini-logos">
         <ul class="mini-logo-list">
           <li>
-            <a href="https://turbotax.intuit.com/" class="mini-logo-holder ttlogo" target="_blank"><%= image_tag("turbotax.jpg", :alt => "turbotax logo") %>Turbotax</a>
+            <a href="https://turbotax.intuit.com/" class="mini-logo-holder ttlogo" target="_blank"> <%= image_tag("turbotax.jpg", size: "10x10") %> Turbotax</a>
           </li>
           <li>
-            <a href="https://quickbooks.intuit.com/" class="mini-logo-holder qblogo" target="_blank"><%= image_tag("quickbooks.png", :alt => "quickboox logo") %>Quickboox</a>
+            <a href="https://quickbooks.intuit.com/" class="mini-logo-holder qblogo" target="_blank"><%= image_tag("quickbooks.png", size: "10x10")%> Quickbooks</a>
           </li>
           <li>
-            <a href="https://www.mint.com/" class="mini-logo-holder mtlogo" target="_blank"><%= image_tag("mint.png", :alt => "mint logo") %>Mint</a>
+            <a href="https://www.mint.com/" class="mini-logo-holder mtlogo" target="_blank"><%= image_tag("mint.ico", size: "10x10")%> Mint</a>
           </li>
         </ul>
       </div>
@@ -50,12 +51,16 @@
           <span class="lock-left-image"></span>
         </div>
       </fieldset>
-      <button type="submit" class="submit-button"><span id="lock-image"><%= image_tag("lock.png", :alt => "lock logo") %></span>Create Account</button>
-      <p class="legal"><em>By clicking Create Account, you agree to our <a href="https://accounts.intuit.com/terms-of-service" target="_blank">License Agreement</a> and <a href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a></em></p>
-
+      <button type="submit" class="submit-button"></span>Create Account</button>
+      <p class="legal"><em class="light_grey">By clicking Create Account, you agree to our <a href="https://accounts.intuit.com/terms-of-service" target="_blank">License Agreement</a> and <a href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a></em></p>
     </form>
     <footer>
-      <div class="footer-logo-holder"><a href="https://www.intuit.com/" class="footer-logo" target="_blank"></a></div>
+    
+    </br> </br>
+    <div class="small-logo-holder-bar">
+      <%= image_tag("intuit.png", :alt => "intuit logo", class: "small-centered_logo") %>
+    </div> </br> </br>
+
       <div class="footer-links-holder">
         <ul class="footer-links">
           <li>
@@ -69,6 +74,10 @@
           </li>
         </ul>
       </div>
+
+
+
+
       <div class="footer-smallprint">
         <small>© 2017 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br>Terms and conditions, features, support, pricing, and service options subject to change without notice.</small>
       </div>
