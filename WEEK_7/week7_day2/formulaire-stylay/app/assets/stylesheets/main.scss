@@ -40,8 +40,11 @@ button {
 }
 
 .logo-holder-bar {
-    width: 100%;
-    height: 55px;
+    box-sizing: border-box;
+    margin: auto;
+    width: 380px;
+    padding: 0 30px 0 30px;
+    zoom: 30%;
 }
 
 a {
@@ -49,10 +52,9 @@ a {
 }
 
 .logo {
-    margin: auto;
     display: absolute;
-    width: 50px;
     height: 15px;
+    align :center;
 }
 
 label, p, button, h1, small {
@@ -78,23 +80,27 @@ label, p, button, h1, small {
 
 .ttlogo {
     background-position: 0px 23px;
-    width: 114px;
+    width: 14px;
+    zoom: 25%;
 }
 
 .qblogo {
     background-position: 238px 23px;
     width: 127px;
+    zoom: 10%;
 }
 
 .mtlogo {
     background-position: 97px 23px;
     width: 60px;
+    zoom: 25%;
 }
 
 .mini-logo-holder {
     height: 23px;
-    display: inline-block;
-    padding-right: 3px;
+    display: absolute;
+    padding-right: 30px;
+    text-align: center;
 }
 
 h1 {
@@ -155,24 +161,14 @@ fieldset {
 .submit-button {
     width: 320px;
     height: 44px;
-    padding: 6px 12px;
     background: linear-gradient(to bottom,#0077C5 0,#167CCC 100%);
     color: white;
     font-size: 16px;
     border: 1px solid #0077C5;
     border-radius: 3px;
+    border-image-width: 3px;
 }
 
-#lock-image {
-    height: 1em;
-    width: .8em;
-    margin-top: 2px;
-    margin-right: 8px;
-    vertical-align: text-top;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 .disclaimer {
     -webkit-margin-before: 0;
@@ -186,18 +182,7 @@ fieldset {
     line-height: 1.5
 }
 
-.captchaHolder {
-    background: #eceef1;
-    width: 376px;
-    height: 46px;
-    margin-left: -29px;
-    padding-top: 12px;
-}
 
-.captcha {
-    font-size: 10px;
-    text-align: center;
-}
 
 .footer-logo {
     display: block;

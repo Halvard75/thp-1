@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Intuit Accounts - Sign Up</title>
-    <link href="main.scss" rel="stylesheet" type="text/scss">
+    <link href="main.scss" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="sign-in-bar">
       
         <button class="sign-in-button"> 
-          <span id="lock-image"></span><span class="button-text"><%= link_to "Sign In", new_session_path(resource_name) %></span></button>
+          <span id="lock-image"><%= image_tag("lock.png", :alt => "lock logo") %></span><span class="button-text"><%= image_tag("lock.png", :alt => "lock logo") %><%= link_to "Sign In", new_session_path(resource_name) %></span></button>
           <p class="existing-sign-in">Already have an Intuit account?<br><%= link_to "I forgot my User ID or Password", new_password_path(resource_name) %><br></p>
     </div>
     
@@ -18,18 +18,17 @@
     </div>
 
 
-
     <form action="#" method="post" class="sign-up-form">
       <div class="mini-logos">
         <ul class="mini-logo-list">
           <li>
-            <a href="https://turbotax.intuit.com/" class="mini-logo-holder ttlogo" target="_blank"></a>
+            <a href="https://turbotax.intuit.com/" class="mini-logo-holder ttlogo" target="_blank"><%= image_tag("turbotax.jpg", :alt => "turbotax logo") %>Turbotax</a>
           </li>
           <li>
-            <a href="https://quickbooks.intuit.com/" class="mini-logo-holder qblogo" target="_blank"></a>
+            <a href="https://quickbooks.intuit.com/" class="mini-logo-holder qblogo" target="_blank"><%= image_tag("quickbooks.png", :alt => "quickboox logo") %>Quickboox</a>
           </li>
           <li>
-            <a href="https://www.mint.com/" class="mini-logo-holder mtlogo" target="_blank"></a>
+            <a href="https://www.mint.com/" class="mini-logo-holder mtlogo" target="_blank"><%= image_tag("mint.png", :alt => "mint logo") %>Mint</a>
           </li>
         </ul>
       </div>
@@ -51,11 +50,9 @@
           <span class="lock-left-image"></span>
         </div>
       </fieldset>
-      <button type="submit" class="submit-button"><span id="lock-image"></span>Create Account</button>
+      <button type="submit" class="submit-button"><span id="lock-image"><%= image_tag("lock.png", :alt => "lock logo") %></span>Create Account</button>
       <p class="legal"><em>By clicking Create Account, you agree to our <a href="https://accounts.intuit.com/terms-of-service" target="_blank">License Agreement</a> and <a href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a></em></p>
-      <div class="captchaHolder">
-        <p class="captcha">Invisible reCAPTCHA by Google <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a> and <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms of Use</a>.</p>
-      </div>
+
     </form>
     <footer>
       <div class="footer-logo-holder"><a href="https://www.intuit.com/" class="footer-logo" target="_blank"></a></div>
