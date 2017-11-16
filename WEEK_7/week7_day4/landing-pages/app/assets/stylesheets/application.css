@@ -1,0 +1,360 @@
+/* Body */
+body{
+	margin: 0;
+	padding:0;
+
+}
+.background-img
+{    
+	background-image: url(https://checkr.com/wp-content/uploads/2015/10/checkr_header_industries-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: sans-serif;
+	font-size: 1em;    
+}
+.background-color
+{ 
+	background-color: rgba(60, 121, 187, 0.72);
+}
+
+.content
+{
+	margin: 0 10% 0 10%;
+}
+
+/* HEADER */
+.first-navbar
+{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 0.4em;
+	font-family: inherit;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+}
+
+ul
+{
+	list-style:none;
+	display: flex;
+	justify-content: space-between;
+}
+
+li
+{
+	padding: 5px;
+}
+
+.checkr-logo
+{   
+	padding-top: 13px;
+	float: left;
+	width: 12%; 
+}
+
+.second-navbar
+{
+	cursor: pointer;
+}
+
+.nav-left
+{
+	float: left;
+	padding-bottom: 10px;
+}
+
+.nav-right
+{
+	float: right;
+	zoom: 60%;
+}
+
+ul
+{
+	padding: 0;
+	list-style: none;
+	
+}
+
+ul li
+{
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	line-height: 21px;
+}
+
+ul li a
+{
+	display: block;
+	padding: 8px 25px;
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: proxima-nova, sans-serif;
+}
+
+.product
+{
+	color:white;
+	font-family: proxima-nova, sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 0.8em;
+}
+
+ul li a:hover
+{
+	color: #5E8BB8;
+}
+
+ul li ul.dropdown
+{
+	min-width: 100%;
+	background: white;
+	display: none;
+	position:absolute;
+	z-index: 999;
+	left:0;
+}
+
+ul li:hover ul.dropdown
+{
+	display: block;
+}
+
+ul li.uldropdown li
+{
+	display: block;
+}
+
+.login
+{
+	font-family: proxima-nova, sans-serif;
+	letter-spacing: 0.1em;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 0.8em;
+	padding: 20px 28px 18px;
+}
+
+.jaune
+{
+	font-size: 1.4em;
+	font-family: proxima-nova, sans-serif;
+	color: #E9CA2C;
+	border-radius: 3px;
+	border:2px solid #E9CA2C;
+	letter-spacing: 0.1em;
+	padding: 1.5em 2.3em 1.5em;
+	background-color: transparent;
+	font-weight: bolder;
+}
+
+.contenu
+{
+	margin-top:90px;
+	display:flex;
+	align-items: center;
+	
+}
+
+.title2
+{
+	font-size: 2.5em;
+}
+
+.texte
+{
+	font-weight: 100px;
+	opacity: 0.8;
+}
+
+.explore
+{
+	font-size: 0.8em;
+	font-family: proxima-nova, sans-serif;
+	color: #3D5978;
+	border-radius: 3px;
+	border:2px solid #E9CA2C;
+	letter-spacing: 0.1em;
+	padding: 1.5em 2.3em 1.5em;
+	background-color: #E9CA2C;
+	font-weight: bolder;	
+}
+
+.video
+{
+	margin-left: 100px;
+	width: 100%;
+	height: 100%;
+    box-sizing: inherit;
+    object-fit: contain;
+    display: block !important;
+}
+
+
+/* Logos */
+
+
+#multiple-logo
+{
+	margin: 0 15% 0 15%;
+}
+
+.more
+{
+	margin-top: 50px;
+	font-family: proxima-nova, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	opacity: 0.8;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+.les-logos
+{
+	margin-top: 40px;
+	display:flex;
+	align-items: center;
+}
+
+.size_logo
+{
+	width: 17%
+}
+
+#background
+{
+	background: #F5F9FB;
+	border-top: 1px solid lightgrey;
+	padding-bottom: 60px;
+}
+
+.third-section
+{
+	margin: 0 13% 0 13%;
+}
+
+.title3
+{
+	padding-top: 30px;
+	font-family: proxima-nova, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	opacity: 0.8;
+	text-align: center;
+	letter-spacing: 0.05em;	
+}
+
+.full-logo
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.mobile-text, .easy-text, .automation-text, .simplified-text, .fast-text
+{
+	color: grey;
+	font-family: sans-serif;
+	letter-spacing: 0.02em;	
+}
+
+strong
+{
+	font-family: sans-serif;
+	letter-spacing: 0.02em;	
+}
+
+#green
+{
+	color: #8BD0AD;
+	opacity: 1.4;
+}
+
+.logo-5
+{	
+	text-align: center;
+	align-items: center; 
+}
+
+.logo-3
+{
+	display: flex;
+	align-items: center;
+}
+
+.logo-2
+{
+	display: flex;
+	align-items: center;
+}
+
+.mobile, .easy, .automation, .simplified, .fast
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+	padding-right:40px;
+}
+
+
+/* Footer */
+
+
+footer
+{
+	background:#102533;
+	bottom:0;
+}
+
+.background-footer
+{
+	margin: 0 10% 0 10%;
+}
+
+footer:before {
+	content: '';
+	display: block;
+	height: 1px;
+	margin-top: 0;
+
+}
+
+.foot-col
+{
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	opacity: 0.8;
+	letter-spacing: 0.05em;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.foot-col li {
+	font-size: 0.875em;
+	line-height: 1em;
+	font-family: sans-serif;
+	margin-bottom: 8px;
+}
+
+.titre
+{
+	margin-bottom: 14px;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	letter-spacing: 0.05em;
+	color: #596C7C;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #596C7C;
+}
+
+.napbs {
+ margin-left: 100%;
+}
+
+
