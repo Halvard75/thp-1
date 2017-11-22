@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My MAX</title>
+</head>
+<body>
+
+<script>
+
+
+var tab = []; // Création du tableau vide
+var number;
+
+
+while (!isNaN(number = prompt('Entrez un chiffre :'))) { // Si la valeur assignée à la variable « numbREe » est valide (différente de « null ») alors la boucle s'exécute
+    tab.push(number); // Ajoute le nouveau chiffre au tableau
+}
+
+
+document.write('Voici les chiffres en mémoire :');
+document.write(tab.join(' '));
+function my_max(table)
+{
+console.log(Math.max.apply(null, table));
+}
+my_max(tab)
+
+</script>
+
+
+</body>
+</html>

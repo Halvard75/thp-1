@@ -1,0 +1,72 @@
+body{
+  font-family: 'Roboto', sans-serif !important;
+  background-color: teal;
+  color: #FFFFFF;
+}
+
+h1{
+  color: red;
+}
+
+#header{
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+}
+
+#calcOutput{
+  width: 250px;
+  height: 75px;
+  border: 2px solid #a3a3c2;
+  border-radius: 6px;
+  background-color: #a3a3c2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  padding-top: 20px;
+}
+
+#calculator {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  background-color: #5c5c8a;
+  border: 2px solid #908b85;
+  border-radius: 20px;      
+}
+
+#numberPad{
+  background-color: #a4c1c1;
+  width: 250px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#steps{
+  color: #000000;
+  padding-left: 50px;
+  font-size: 2em;
+}
+
+/* Recall that all the buttons are anchor tags */
+a{
+  margin: 5px;
+  width: 36px;
+  height: 35px;
+}
+
+.bigButton{
+  width: 86px;
+}
+

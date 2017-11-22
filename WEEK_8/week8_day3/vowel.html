@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Vowel
+	</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 	
+myString = prompt('Entrez tout le texte que vous souhaitez :') // On crée un objet String
+document.write(myString.toLowerCase());
+document.write("<br>")
+
+document.write("Nombre de lettres : ")
+document.write(myString.length); // On affiche le nombre de caractères, au moyen de la propriété « length »
+document.write("<br>")
+
+document.write("Nombre de voyelles : ")
+document.write("<br>")
+function Count(string) {
+	var Count = 0;
+
+	let vowels = 'aeoiuyéèêëàâäîïùôóö';
+
+	for (var i = 0; i < string.length; i++) {
+		if (vowels.includes(string[i])) {
+			Count++
+		}
+	}
+
+	return Count;
+}
+
+document.write(Count(myString));
+
+
+ </script>
+
+
+</body>
+</html>

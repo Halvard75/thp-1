@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+myString = prompt('Entrez tout le texte que vous souhaitez :') 
+
+document.write("<br>")
+
+function reverseString(str) {
+
+  var strArray = str.split("");
+  strArray.reverse();
+
+  var strReverse = strArray.join("");
+
+  return strReverse;
+}
+
+document.write(reverseString(myString));
+
+
+</script>
+
+</body>
+</html>
