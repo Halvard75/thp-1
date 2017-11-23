@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Js Calculator</title>
+
+    <link rel="stylesheet" href="style.scss">
+
+  </head>
+
+  <body>
+
+    <h1>Welcome to the Js Calculator !</h1>
+
+    <div id="calculator">
+      <div>
+        <form>
+          <input type="text" id="result" disabled></input>
+        </form>
+      </div>
+      <div>
+        <form>
+        <div class="line" id="top">
+          <input type="button" value="C" class="touch" id="clear" onClick='toScreen("C")'>
+          <input type="button" value="/" class="touch" id="divide" onClick='toScreen("/")'>
+        </div>
+        <div class="line">
+          <input type="button" value="7" class="touch" id="7" onClick='toScreen(7)'>
+          <input type="button" value="8" class="touch" id="8" onClick='toScreen(8)'>
+          <input type="button" value="9" class="touch" id="9" onClick='toScreen(9)'>
+          <input type="button" value="X" class="touch" id="multiply" onClick='toScreen("*")'>
+        </div>
+        <div class="line">
+          <input type="button" value="4" class="touch" id="4" onClick='toScreen(4)'>
+          <input type="button" value="5" class="touch" id="5" onClick='toScreen(5)'>
+          <input type="button" value="6" class="touch" id="6" onClick='toScreen(6)'>
+          <input type="button" value="-" class="touch" id="minus" onClick='toScreen("-")'>
+        </div>
+        <div class="line">
+          <input type="button" value="1" class="touch" id="1" onClick='toScreen(1)'>
+          <input type="button" value="2" class="touch" id="2" onClick='toScreen(2)'>
+          <input type="button" value="3" class="touch" id="3" onClick='toScreen(3)'>
+          <input type="button" value="+" class="touch" id="plus" onClick='toScreen("+")'>
+        </div>
+        <div class="line" id="bottom">
+          <input type="button" value="0" class="touch" id="0" onClick='toScreen(0)'>
+          <input type="button" value="." class="touch" id="dot" onClick='toScreen(".")'>
+          <input type="button" value="=" class="touch" id="equal" onClick='answer()'>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>

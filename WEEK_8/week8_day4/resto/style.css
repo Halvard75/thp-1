@@ -1,0 +1,38 @@
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+li{
+	list-style: none;
+}
+
+ul.child {
+	display: none;
+	width: 100%!important;
+	padding: 5px;
+	float: left;
+	text-align: left;
+
+}
+
+ul.parent > li {
+float: left;
+width: 30%;
+text-align: center;
+padding :10px;
+cursor: pointer;
+}
+
+ul.child > h5 {
+weight: bold;
+}

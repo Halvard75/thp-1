@@ -35,6 +35,7 @@ $(document).ready(function(){
   function getTotal(){
     totalString = inputs.join("");
     $("#steps").html(eval(totalString));
+       console.log(inputs);
   }
   
   $("a").on("click",function(){
