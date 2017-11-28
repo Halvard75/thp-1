@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>
+<body>
+
+<h1>Connaître une position GPS en cliquant dessus</h1>
+
+<div id="map" style="width:auto;height:600px;"></div>
+
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(44.302464,9.214132);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 2, disableDefaultUI: false, mapTypeId:google.maps.MapTypeId.HYBRID};
+   var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+var map = new google.maps.Map(mapCanvas, mapOptions);
+  google.maps.event.addListener(map, 'click', function(event) {
+    placeMarker(map, event.latLng);
+  });
+}
+
+function placeMarker(map, location) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+  });
+  infowindow.open(map,marker);
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVg8PA4AXW1Te-uaWgQ1Tn1tvEaZnmrvI&callback=myMap"></script>
+
+
+</body>
+</html>
